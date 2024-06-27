@@ -1,11 +1,14 @@
 return {
-	-- Add indentation guides even on blank lines
-	"lukas-reineke/indent-blankline.nvim",
-	-- Enable `lukas-reineke/indent-blankline.nvim`
-	-- See `:help ibl`
-	main = "ibl",
-	opts = {},
-	config = function()
-		require("ibl").setup()
-	end,
+
+  "lukas-reineke/indent-blankline.nvim",
+  main = "ibl",
+  opts = {},
+  indent_blankline = {
+    enabled = true,
+    scope_color = "lavender", -- catppuccin color (eg. `lavender`) Default: text
+    colored_indent_levels = false,
+  },
+  config = function()
+    require("ibl").setup()
+  end,
 }
