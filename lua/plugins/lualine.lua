@@ -32,7 +32,7 @@ return {
 					},
 				},
 				lualine_x = { "encoding", "fileformat", "searchcount", "filetype" },
-				lualine_y = { "progress","file_status" },
+				lualine_y = { "progress", "file_status" },
 				lualine_z = {
 					{ "location", separator = { right = "" }, left_padding = 2 },
 				},
