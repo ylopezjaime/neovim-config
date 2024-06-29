@@ -22,13 +22,22 @@ return {
 				},
 			},
 			sections = {
-				lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
+				lualine_a = {
+					{ "mode", separator = { left = "" }, right_padding = 2, icons_enabled = true, icon = " " },
+				},
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = {
 					{
 						"filename",
 						file_status = true,
-						path = 1,
+						path = 0,
+						color = { fg = "#F8FBF6", bg = "#896a98", style = "bold" },
+					},
+					{
+						"hostname",
+						color = { fg = "#F8FBF6", bg = "#896a98", style = "bold" },
+						separator = { right = "" },
+						left_padding = 2,
 					},
 				},
 				lualine_x = { "encoding", "fileformat", "searchcount", "filetype" },
