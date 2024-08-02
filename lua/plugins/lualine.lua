@@ -9,7 +9,7 @@ return {
 				icons_enabled = true,
 				theme = "catppuccin",
 				component_separators = "",
-				section_separators = { left = "", right = "" },
+				section_separators = { left = "", right = ""},
 				disabled_filetypes = {
 					statusline = {},
 					winbar = {},
@@ -36,7 +36,7 @@ return {
 					{
 						"hostname",
 						color = { fg = "#F8FBF6", bg = "#896a98", style = "bold" },
-						separator = { right = "" },
+						separator = { right = "" },
 						left_padding = 2,
 					},
 				},
