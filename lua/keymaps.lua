@@ -1,7 +1,7 @@
 -- define common options
 local opts = {
-  noremap = true, -- non-recursive
-  silent = true, -- do not show message
+	noremap = true, -- non-recursive
+	silent = true, -- do not show message
 }
 
 -----------------
@@ -35,4 +35,4 @@ vim.keymap.set("v", ">", ">gv", opts)
 -----------------
 --vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
 vim.keymap.set("n", "<space>bf", ":Neotree buffers reveal float<CR>")
-vim.keymap.set("n", "<space>tt", ":ToggleTerm size=20 direction=float<CR>")
+vim.keymap.set("n", "<space>nb", ":Navbuddy<CR>")
